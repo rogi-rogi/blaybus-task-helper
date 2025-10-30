@@ -7,7 +7,7 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
 
-**BlayBus Task Helper**는 Blaybus(프로젝트/일정/협업 툴)에서 **페이지를 직접 열지 않아도** Task를 빠르게 생성·시작하고, 팝업에서 **한 번에 중지**할 수 있게 도와주는 브라우저 확장 프로그램입니다.
+**BlayBus Task Helper**는 [Blaybus(프로젝트/일정/협업 툴)](https://www.blaybus.com/)에서 **페이지를 직접 열지 않아도** Task를 빠르게 생성·시작하고, 팝업에서 **한 번에 중지**할 수 있게 도와주는 브라우저 확장 프로그램입니다.
 
 ## ✨ 주요 기능
 
