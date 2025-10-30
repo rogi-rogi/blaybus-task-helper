@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <title>BlayBus Task Helper</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" role="group" aria-labelledby="title">
+      <div class="row">
+        <div class="title" id="title">BlayBus Workspace</div>
+        <button class="help" aria-label="도움말" tabindex="0">
+          i
+          <div class="tooltip" role="tooltip">
+            task를 자동으로 관리할 <strong>프로젝트의 workspace 경로</strong>를 입력하세요.<br/>
+            예시: <code>https://www.blaybus.com/project/1234/workspace?view=list</code>
+          </div>
+        </button>
+      </div>
+
+      <!-- 워크스페이스 저장 -->
+      <div class="field">
+        <label for="ws">워크스페이스 URL</label>
+        <input id="ws" class="input" type="text" placeholder="https://www.blaybus.com/project/1234/workspace?view=list" />
+        <div class="hint">URL을 입력한 뒤 저장을 누르면 확장에서 기억합니다.</div>
+      </div>
+      <div class="actions">
+        <button id="saveBtn" class="btn">저장</button>
+      </div>
+
+      <hr class="divider"/>
+
+      <!-- Task 생성 -->
+      <div class="field">
+        <label for="taskInput">Task 이름</label>
+        <input id="taskInput" class="input" type="text" placeholder="예: task1" autocomplete="off" />
+        <div id="taskActions" class="task-actions hidden">
+          <button id="stopBtn" class="stop-btn" title="종료(Stop)" aria-label="종료">
+            <span class="stop-dot"><span class="stop-square"></span></span>
+            <span class="stop-label">종료</span>
+          </button>
+        </div>
+        <div class="hint">Enter를 누르면 시작, 정지 버튼으로 중지합니다.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" aria-live="polite" aria-atomic="true">
+    <div class="toast-inner" id="toastInner">저장되었습니다</div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
